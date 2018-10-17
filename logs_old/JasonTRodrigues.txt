@@ -1,0 +1,5 @@
+Reminds me of an old atari game, with the same sort of classic, choppy feel. 
+Ran smoothly
+No glitches
+No apparent end state when all buttons are pressed. "Spike trap" looking ground texture is not really a spike trap. 
+After failing to find a way around "spike trap" texture for a good amount of time, I attempted to cross it expecting a fail state but there was none. 

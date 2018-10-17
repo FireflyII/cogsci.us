@@ -1,0 +1,8 @@
+It was pretty straightforward.
+It ran smoothly.
+The shift key only increases the speed of movements initiated after you begin holding it down. That was odd.
+
+The buttons made the same noise when walked over whether the player had walked over them previously or not.
+The game didn't make it clear if you had already activated all the buttons - I did a cursory double-check around the map to make sure I did before choosing to leave.
+
+The button hidden under the tree on the left side was a little too obvious, though.

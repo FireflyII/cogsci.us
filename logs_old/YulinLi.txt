@@ -1,0 +1,7 @@
+In terms of game play is plain. There isn't much to interactive with, and lack of graphical instruction and in game hints also hurts the user experience. 
+
+Something that was stood out was the combination of "nothing in the game will hurt you" and the spike on the ground. My common game sense told me that was dangerous, but in this game, I took the word of the instruction and went through it. 
+It was mostly smooth. There was some stutter while the background was moving. Probably just my computer. 
+Sometimes button will get activated even when I am not really touching it.
+I hope there was a buttonPushedCounter so that I don't have to keep track of it in my mind.
+:D

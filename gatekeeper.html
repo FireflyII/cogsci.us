@@ -1,0 +1,64 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Gatekeeper</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+    <?php
+    	//session_start();
+		function getRealIpAddr(){
+	    	if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
+	    	{
+	      		$ip=$_SERVER['HTTP_CLIENT_IP'];
+	    	}
+	    	elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))   //to check ip is pass from proxy
+	    	{
+	      		$ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+	    	}
+	    	else
+	    	{
+	      		$ip=$_SERVER['REMOTE_ADDR'];
+	    	}
+	    	return $ip;
+		}
+		$ip = getRealIpAddr();
+		$fn = htmlspecialchars($_GET["workerID"]);
+		echo "worker: " . $fn . "<br>";
+		echo "ip: " . $ip . "<br>";
+		$check = `python csvcheck.py {$fn} {$ip}`;
+		if ($check == 1){
+			echo "That name is in use.";
+		} else if ($check ==2){
+			echo "That ip is in use with a different name. <br> Adding new user.";
+				$codes = `python csvadd.py {$fn} {$ip}`;
+				$codes2 = str_getcsv($codes);
+				$_SESSION["cond"]=$codes2[0];
+				$_SESSION["completion"]=$codes2[1];
+				$_SESSION["ip"]=$ip;
+				$_SESSION["worker"]=$fn;
+				echo "<script type=\"text/javascript\">window.location = \"ProblemGame.html\" </script>";
+				//header('Location: /redirect.html');
+		} else {
+			echo "That works!";
+			$codes = `python csvadd.py {$fn} {$ip}`;
+			echo "The second python call yielded: " . $codes . "<br>";
+			$codes2 = str_getcsv($codes);
+			$_SESSION["cond"]=$codes2[0];
+			$_SESSION["completion"]=$codes2[1];
+			$_SESSION["cond"]=$cond;
+			$_SESSION["ip"]=$ip;
+			$_SESSION["worker"]=$fn;
+			echo "<script type=\"text/javascript\">window.location = \"ProblemGame.html\" </script>";
+			//header('Location: /redirect.html');
+		}
+	?>
+</body>
+
+</html>

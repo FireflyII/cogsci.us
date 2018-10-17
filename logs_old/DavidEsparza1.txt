@@ -1,0 +1,5 @@
+The game was very simple yet entertaining. It was interesting to find a way around the map attempting to get to each red button as fast as I could. I found myself trying to cover the whole map before reaching all the final blue button. 
+The game ran smoothly and had no lags. 
+There was a escape route to another location on the map but found that I couldn't go back into the same escape route that I had just got out of to go to the previous location.  I'm not sure if the game was programmed in such way to do so, or a bug in the code. 
+I found a bit confusing that there was no change or reaction of the red buttons when I stood over it with the robot. The situation was a little vague as I didn't know if i had entered the red button and was okay to do the same to the next red button. 
+Entertaining game. 

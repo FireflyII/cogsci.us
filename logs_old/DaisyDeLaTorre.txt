@@ -1,0 +1,5 @@
+The first time the robot went over a red button it opened a wall, however after going over another red button the wall did not open. 
+The game ran smoothly as far as controlling the robot and navigating through the course.
+As mentioned before, the walls did not open after going over the buttons. The first time the robot went over the red button it did function properly. 
+No, the directions were clear and just involved navigating through the course.
+I would hear the click sound when going over the buttons, but the walls did not move out of the way. 

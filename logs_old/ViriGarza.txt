@@ -1,0 +1,4 @@
+The game was interesting, I initially though the white dots on the flor where spikes and I had to find another way but the instructions said nothing would harm the robot so I passed it. it was a bit challenging because a specific red dot had to be collected in order to unblock the path in order to reach the rest of the red dots. 
+When the little robot hit something it would lag a little bit and if the shift key is not selected while playing the robot will move very slow. Overall it ran smoothly
+I was not able to pass behind the tree trunk only the top part of the tree, the leaves.  
+No, instructions where clear

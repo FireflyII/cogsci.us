@@ -1,0 +1,4 @@
+I though the red dots would disappear once I reached them so it was confusing keeping track of which dots I has already touched. 
+It ran smoothly 
+nope
+Just the red dots not disappearing after making contact and i thought wall would open for each dot but only a few opened 

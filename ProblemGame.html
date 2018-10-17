@@ -1,0 +1,48 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Problem Game</title>
+    <div id="load"><img src="/assets/images/loader.gif" style='position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)'></div>
+    
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/phaser.js"></script>
+    <style>
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+    </style>
+</head>
+
+<body>
+    <!--retrieve user info-->
+    <?php
+    $fn = $_SESSION["worker"];
+    $cond = $_SESSION["cond"];
+    //echo "Worker: " . $fn . "<br> Cond: " . $cond . "<br>";
+?>
+        <!--set up the variables-->
+        <script type="text/javascript">
+        var fname = "<?php echo $fn ?>";
+        var sname = fname;
+        var cond = "<?php echo $cond ?>";
+        var clearCompletion = cond[0] == "1";
+        var clearProgress = cond[1] == "1";
+        //var clearRules = cond[2] == "1";
+        //clear rules are pre-set now.
+        var clearRules = false;
+        </script>
+        <!--load the game-->
+        <div id="gameDiv"> </div>
+        <script src="js/IntroState.js"></script>
+        <script src="js/playState.js"></script>
+        <script src="js/gameoverState.js"></script>
+        <script src="js/game.js"></script>
+</body>
+
+</html>

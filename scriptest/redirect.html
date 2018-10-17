@@ -1,0 +1,21 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Session Test</title>
+</head>
+
+<body>
+<?php
+
+	echo "Welcome. There should be some useful information here: <br>";
+	echo "Your IP: " . $_SESSION["ip"] . "<br>";
+	echo "Your Worker ID: " . $_SESSION["worker"] . "<br>";
+	echo "Your Condition Code: " . $_SESSION["cond"] . "<br>";
+?>
+
+</body>
+</html>

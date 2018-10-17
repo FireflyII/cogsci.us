@@ -1,0 +1,4 @@
+It was pretty fun
+It lagged when you pressed the shift key and the car would go fast for a bit and then slow down
+No, just again the shift key worked sometimes. 
+It would be nice to have a counter that shows how many buttons you have pressed.

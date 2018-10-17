@@ -1,0 +1,161 @@
+4/11/2018
+Stats on newly run experimental data
+
+aov(Distance_Traveled ~ + Clear_Progress + Clear_Completion,data = game_data)
+	* for Clear_Progress with p = 0.0239
+	. for Clear_Completion with p = 0.0576
+
+aov(Average_Distance_Per_Step ~ + Clear_Progress + Clear_Completion,data = game_data)
+	** for Clear_Completion with p = 0.00993
+
+aov(Number_of_Paths ~ + Clear_Progress + Clear_Completion,data = game_data)
+	* for Clear_Progress with p = 0.0315
+	* for Clear_Completion with p = 0.0408
+
+aov(Average_Path_Length ~ + Clear_Progress + Clear_Completion,data = game_data)
+	* for Clear_Completion with p = 0.0304
+
+aov(Standard_Deviation_of_Path_Length ~ + Clear_Progress + Clear_Completion,data = game_data)
+	* for Clear_Completion with p = 0.0211
+
+aov(percent_on_buttons ~ + Clear_Progress + Clear_Completion,data = game_data)
+	*** for Clear_Progress with p = 8.2e-10
+
+aov(percent_visited ~ + Clear_Progress + Clear_Completion,data = game_data)
+	** for Clear_Progress with p = 0.00942
+
+aov(backtrack_ratio ~ + Clear_Progress + Clear_Completion,data = game_data)
+	** for Clear_Progress with p = 0.00842
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+lm(Distance_Traveled ~ Clear_Progress + Clear_Completion,data = game_data)
+	* for Clear_Progress
+	. for Clear_Completion
+
+lm(Average_Distance_Per_Step ~ Clear_Progress + Clear_Completion,data = game_data)
+	** for Clear_Completion
+
+lm(Number_of_Paths ~ Clear_Progress + Clear_Completion,data = game_data)
+	* for Clear_Completion
+	* for Clear_Progress
+
+lm(Average_Path_Length ~ Clear_Progress + Clear_Completion,data = game_data)
+	* for Clear_Completion
+
+lm(Standard_Deviation_of_Path_Length ~ Clear_Progress + Clear_Completion,data = game_data)
+	* for Clear_Completion
+
+lm(percent_on_buttons ~ Clear_Progress + Clear_Completion,data = game_data)
+	*** for Clear_Progress
+
+lm(percent_visited ~ Clear_Progress + Clear_Completion,data = game_data)
+	** for Clear_Progress
+
+lm(backtrack_ratio ~ Clear_Progress + Clear_Completion,data = game_data)
+	** for Clear_Progress
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+lm(Distance_Traveled ~ Clear_Progress * Clear_Completion,data=game_data)
+	. for Clear_Completion
+
+lm(Average_Distance_Per_Step ~ Clear_Progress * Clear_Completion,data=game_data)
+	* for Clear_Completion
+
+lm(Number_of_Paths ~ Clear_Progress * Clear_Completion,data=game_data)
+	. for Clear_Completion
+	. for Clear_Progress
+
+lm(Average_Path_Length ~ Clear_Progress * Clear_Completion,data=game_data)
+	. for Clear_Completion
+
+lm(Standard_Deviation_of_Path_Length ~ Clear_Progress * Clear_Completion,data=game_data)
+	* for Clear_Completion
+
+lm(percent_on_buttons ~ Clear_Progress * Clear_Completion,data=game_data)
+	*** for Clear_Progress
+
+lm(percent_visited ~ Clear_Progress * Clear_Completion,data=game_data)
+	* for Clear_Progress
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Survey data:
+
+taxing
+	* in Clear_Progress with p = 0.0445
+	. in Clear_Completion with p = 0.0959
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+wander
+	*** in Time_Spent with p = 3.73e-06
+	*** in Steps_to_Completion with p = 9.06e-06
+	** in Distance_Traveled with p = 0.00922
+	* in Average_Distance_Per_Step with p = 0.0112
+	*** in Number_of_Paths with p = 0.000156
+	* in Average_Path_Length with p = 0.0119
+	* in Standard_Deviation_of_Path_Length with p = 0.0225
+	** in average_button_visits with p = 0.00764
+	** in backtrack_std with p = 0.00408
+	*** in average_visit with p = 9.06e-06
+	*** in average_per_visited with p = 2.99e-05
+
+frustrated
+	*** in Time_Spent with p = 0.000183
+	** in Buttons_Pushed with p = 0.00423
+	** in Steps_to_Completion with p = 0.00486
+	** in Average_Distance_Per_Step with p = 0.00472
+	** in Number_of_Paths with p = 0.00347
+	* in Average_Path_Length with p = 0.0278
+	** in Standard_Deviation_of_Path_Length with p = 0.00765
+	** in average_visit with p = 0.00486
+	*** in average_per_visited with p = 0.000888
+	* in backtrack_ratio with p = 0.0152
+
+confident
+	* in Buttons_Pushed with p = 0.01137
+	* in Average_Distance_Per_Step with p = 0.0139
+	* in Average_Path_Length with p = 0.0149
+	** in Standard_Deviation_of_Path_Length with p = 0.00459
+
+suprised
+	* in average_button_visits with p = 0.0171
+
+smooth
+	* in Time_Spent with p = 0.0251
+	. in Steps_to_Completion with p = 0.0726
+	* in Average_Distance_Per_Step with p = 0.0167
+	. in Standard_Deviation_of_Path_Length with p = 0.0721
+	. in average_visit with p = 0.0726
+	* in average_per_visited with p = 0.0437
+
+practice
+	* in Time_Spent with p = 0.0168
+	* in Steps_to_Completion with p = 0.0297
+	** in Average_Distance_Per_Step with p = 0.00465
+	** in Number_of_Paths with p = 0.00382
+	* in Average_Path_Length with p = 0.0163
+	** in Standard_Deviation_of_Path_Length with p = 0.00521
+	* in average_visit with p = 0.0297
+	* in average_per_visited with p = 0.0154
+
+taxing
+	*** in Time_Spent with p = 2.1e-06
+	. in Buttons_Pushed with p = 0.0688
+	*** in Steps_to_Completion with p = 0.000286
+	*** in Average_Distance_Per_Step with p = 0.000118
+	** in Number_of_Paths with p = 0.00353
+	** in Average_Path_Length with p = 0.00418
+	** in Standard_Deviation_of_Path_Length with p = 0.00186
+	. in percent_visited with p = 0.0767
+	*** in average_visit with p = 0.000286
+	*** in average_per_visited with p = 8.22e-07
+	* in backtrack_ratio with p = 0.0289
+
+worthwhile
+	* in Average_Distance_Per_Step with p = 0.042
+	. in Average_Path_Length with p = 0.0883
+	* in Standard_Deviation_of_Path_Length with p = 0.0329
+	

@@ -1,0 +1,9 @@
+-
+-
+In the first run my UI looked like this:
+https://pasteboard.co/GNiaroz.png
+and that's why I said there was no counter. Also in this "glitched" version I was not able to tell if a button has been pushed or not.
+So I replay the game.
+https://pasteboard.co/GNi9YzL.png 
+-
+-
