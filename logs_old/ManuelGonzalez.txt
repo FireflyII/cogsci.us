@@ -1,5 +1,0 @@
-There was noise generation while I ran over a button I had already previously touched.
-The game ran smoothly for the most part, it randomly re-positioned me once while I was driving around.
-The one time I was re-positioned randomly.
-I assumed the white dotted terrain was impassible, but I was wrong.
-The game was overall pretty smooth, I would like to see how it looks further down the line of development.
